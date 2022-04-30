@@ -1,79 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    --bc-color: #ffffff;
-    --bg-color-title:#6D326D;
-    --bg-color-acc: #003F91;
-    --bg-color-p: #E5F4E3;
-    --bg-color-border: #5DA9E9;
+body {
+  background-color: white;
+
+  margin: 70px auto;
+
+  width: 80%;
+
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: var(--bc-color);
+h1 {
+  color: black;
 
-    margin: 0 auto;
-    width: 50%;
+  text-align: center;
 
-    font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
 }
 
-h1{
-    color: var(--bg-color-title);
+summary {
+  list-style-type: "+ ";
 
-    text-align: center;
+  font-size: 20px;
 
-    font-size: 70px;
-    font-weight: 700;
+  margin-bottom: 10px;
+
+  padding: 10px 0 10px 30px;
+
+  border: 1px solid black;
+  border-radius: 30px;
 }
 
-section{
-    background-color: var(--bg-color-acc);
+ul {
+  list-style-type: "—  ";
 
-    padding: 25px;
+  padding: 25px;
 
-    color: var(--bg-color-p);
+  width: 100%;
 
-    border-radius: 10px;
+  margin: -10px auto 20px;
 }
 
-.accordion{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media (min-width: 900px) {
+  body {
+    background-color: white;
 
-    border: 2px solid var(--bg-color-border);
-    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-    width: 100%;
+    width: 60%;
 
-    background-color: var(--bg-color-acc);
-    font-size: 20px;
-    color: var(--bg-color-p);
+    margin-top: 0;
 
-    padding: 20px;
-    margin-bottom: 10px;
-
-    cursor: pointer;
-
-
-}
-
-.accordion::after{
-    background: url(/assets/images/icon-close.svg);
-
-    content: '';
-
-    width: 23px;
-    height: 23px;
-    transform: rotate(45deg);
-}
-
-.panel{
-    display: none;
+    font-family: "Poppins", sans-serif;
+  }
 }
